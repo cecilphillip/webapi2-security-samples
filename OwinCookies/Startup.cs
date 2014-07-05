@@ -43,12 +43,13 @@ namespace OwinCookies
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{action}"
+                routeTemplate: "{controller}/{action}"
             );
 
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Formatting.Indented;
 
-            app.UseWebApi(config);
+            app.Map("/api", api => api.UseWebApi(config));
+            
         }
     }
 }

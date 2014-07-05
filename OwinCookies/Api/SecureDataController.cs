@@ -5,7 +5,7 @@ using System.Web.Http;
 
 namespace OwinCookies.Api
 {
-    [RoutePrefix("api/secure")]
+    [RoutePrefix("secure")]
     [Authorize]
     public class SecureDataController : ApiController
     {
