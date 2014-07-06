@@ -12,7 +12,7 @@
         $scope.showData = false;
 
         $scope.load = function () {
-            $http.get('/api/secure/data', { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+            $http.get('/api/secure/data')
                 .then(function (resp) {
                     $scope.data = resp.data;
                     $scope.showData = true;
