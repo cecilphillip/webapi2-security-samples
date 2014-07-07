@@ -1,0 +1,52 @@
+﻿<section ng-controller="HomeController">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Load Authorized Data</h3>
+            </div>
+            <div class="panel-body">
+                <button ng-click="load()" class="btn btn-primary"> Load Data</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-info" ng-show="showData">
+            <div class="panel-heading">
+                <h3 class="panel-title">User Data</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>User Name:</td>
+                            <td>{{data.UserName}} </td>
+                        </tr>
+                        <tr>
+                            <td>Is Authenticated</td>
+                            <td>{{data.IsAuthenticated}}</td>
+                        </tr>
+                        <tr>
+                            <td>Date Time</td>
+                            <td>{{data.Date}}</td>
+                        </tr>
+                        <tr>
+                            <td>Claims</td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li ng-repeat="claim in data.Claims">
+                                        <strong> {{claim.Type}} </strong> {{claim.Value}}
+                                    </li>
+                                </ul>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
