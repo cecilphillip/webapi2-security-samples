@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace OwinApiKeys
+namespace WebApiKeys
 {
     public class ApiKeyHeaderHandler : DelegatingHandler
     {

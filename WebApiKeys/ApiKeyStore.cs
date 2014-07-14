@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OwinApiKeys
+namespace WebApiKeys
 {
     public static class ApiKeyStore
     {

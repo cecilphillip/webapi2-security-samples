@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinCookies", "OwinCookies\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinCors", "OwinCors\OwinCors.csproj", "{231A309E-08C7-4837-BD8D-E1DC40022EE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinApiKeys", "OwinApiKeys\OwinApiKeys.csproj", "{BA2B17FE-D568-4406-B0D8-E3CA06118E0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiKeys", "WebApiKeys\WebApiKeys.csproj", "{BA2B17FE-D568-4406-B0D8-E3CA06118E0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsOtherDomain", "CorsOtherDomain\CorsOtherDomain.csproj", "{9C22B464-A998-4967-A1DB-7B9ACD548899}"
 EndProject

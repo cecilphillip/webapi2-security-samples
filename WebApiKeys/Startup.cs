@@ -2,17 +2,16 @@
 using Microsoft.Owin;
 using Newtonsoft.Json;
 using Owin;
-using OwinApiKeys;
+using WebApiKeys;
 
 [assembly: OwinStartup(typeof(Startup))]
 
-namespace OwinApiKeys
+namespace WebApiKeys
 {
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-
             ConfigureWebApi(app);
         }
 

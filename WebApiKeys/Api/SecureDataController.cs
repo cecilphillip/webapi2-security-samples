@@ -3,7 +3,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Web.Http;
 
-namespace OwinApiKeys.Api
+namespace WebApiKeys.Api
 {
     [RoutePrefix("secure")]
     public class SecureDataController : ApiController

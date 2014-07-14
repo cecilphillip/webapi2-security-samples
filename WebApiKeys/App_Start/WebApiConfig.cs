@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace OwinApiKeys
+namespace WebApiKeys
 {
     public static class WebApiConfig
     {
