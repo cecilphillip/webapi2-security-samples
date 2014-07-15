@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.Owin.Security.OAuth;
 
-namespace OAuthResourceOwnerServer.Providers
+namespace OAuthResourceServer.Providers
 {
     public class CustomAuthorizationServerProvider : OAuthAuthorizationServerProvider
     {

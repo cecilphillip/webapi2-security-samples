@@ -7,8 +7,8 @@
     <ProjectGuid>{7B7A5743-C629-4350-AB92-FC0E1386C7D7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OAuthResourceOwnerClient</RootNamespace>
-    <AssemblyName>OAuthResourceOwnerClient</AssemblyName>
+    <RootNamespace>OAuthResourceClient</RootNamespace>
+    <AssemblyName>OAuthResourceClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

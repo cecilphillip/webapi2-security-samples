@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace OAuthResourceOwnerServer
+namespace OAuthResourceServer
 {
     public static class WebApiConfig
     {

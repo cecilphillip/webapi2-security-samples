@@ -32,9 +32,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiKeysConsole", "ApiKeysCo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OAuth2", "OAuth2", "{60523679-5E03-45F8-865F-D8590128846B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceOwnerServer", "OAuthResourceOwnerServer\OAuthResourceOwnerServer.csproj", "{63C5E3A6-E656-4A2C-AE3A-4229E055F3AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceServer", "OAuthResourceServer\OAuthResourceServer.csproj", "{63C5E3A6-E656-4A2C-AE3A-4229E055F3AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceOwnerClient", "OAuthResourceOwnerClient\OAuthResourceOwnerClient.csproj", "{7B7A5743-C629-4350-AB92-FC0E1386C7D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceClient", "OAuthResourceClient\OAuthResourceClient.csproj", "{7B7A5743-C629-4350-AB92-FC0E1386C7D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

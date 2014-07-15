@@ -3,7 +3,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Web.Http;
 
-namespace OAuthResourceOwnerServer.Api
+namespace OAuthResourceServer.Api
 {
     [RoutePrefix("secure")]
     [Authorize]

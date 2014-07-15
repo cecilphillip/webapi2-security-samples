@@ -3,13 +3,13 @@ using System.Web.Http;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json;
-using OAuthResourceOwnerServer;
-using OAuthResourceOwnerServer.Providers;
+using OAuthResourceServer;
+using OAuthResourceServer.Providers;
 using Owin;
 
 [assembly: OwinStartup(typeof(Startup))]
 
-namespace OAuthResourceOwnerServer
+namespace OAuthResourceServer
 {
     public class Startup
     {
