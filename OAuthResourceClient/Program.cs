@@ -9,7 +9,7 @@ namespace OAuthResourceClient
     {
         static void Main(string[] args)
         {
-            var task = ClientCredentialFlow();
+            var task = ResourceOwnerFlow();
 
             Task.WaitAll(task);
 

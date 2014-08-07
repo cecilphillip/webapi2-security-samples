@@ -3,7 +3,6 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Newtonsoft.Json;
 using Owin;
-using Thinktecture.IdentityModel;
 
 [assembly: OwinStartup(typeof(WebApiClaimsAuthorization.Startup))]
 

@@ -26,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authorization", "Authorizat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClaimsAuthorization", "WebApiClaimsAuthorization\WebApiClaimsAuthorization.csproj", "{6A77F8A3-540F-4AB4-A5C0-BD6405A5FBB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B5280995-292C-4C0F-82D1-0914787ECDE0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiKeys", "ApiKeys", "{B5280995-292C-4C0F-82D1-0914787ECDE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiKeysConsole", "ApiKeysConsole\ApiKeysConsole.csproj", "{021E1094-5262-44BD-A53D-9550917CE558}"
 EndProject
