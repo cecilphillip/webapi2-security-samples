@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{15EE17C7-F1AB-4D6B-BEE2-173B542B5CB2}"
 	ProjectSection(SolutionItems) = preProject
@@ -35,6 +35,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceServer", "OAuthResourceServer\OAuthResourceServer.csproj", "{63C5E3A6-E656-4A2C-AE3A-4229E055F3AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthResourceClient", "OAuthResourceClient\OAuthResourceClient.csproj", "{7B7A5743-C629-4350-AB92-FC0E1386C7D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11588CB2-1ACC-44BB-B812-AE9C0386DD51}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

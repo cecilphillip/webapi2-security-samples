@@ -15,8 +15,7 @@ namespace WebApiClaimsAuthorization.Controllers
         {
             return View();
         }
-
-        // GET: Auth
+        
         [HttpGet]
         public ActionResult Login()
         {
@@ -26,40 +25,35 @@ namespace WebApiClaimsAuthorization.Controllers
         [HttpPost]
         public ActionResult Login(LoginModel model, string returnUrl)
         {
-            if (model.UserName == model.Password) //valdiate credentials there
+            if (model.UserName != model.Password) return View();
+
+            var claims = new List<Claim>
             {
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, model.UserName),
-                    new Claim(ClaimTypes.Email, "user@email.com"),
-                    new Claim(ClaimTypes.Role, "Administrator"),
-                    new Claim("Data", "Read"),
-                    
-                };
+                new Claim(ClaimTypes.Name, model.UserName),
+                new Claim(ClaimTypes.Email, "user@email.com"),
+                new Claim(ClaimTypes.Role, "Administrator"),
+                new Claim("Data", "Read"),                    
+            };
 
-                var id = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationType);
-                var authenticationManager = this.Request.GetOwinContext().Authentication;
+            var id = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationType);
+            var authenticationManager = Request.GetOwinContext().Authentication;
 
-                var authProperties = new AuthenticationProperties() { IsPersistent = true };
+            var authProperties = new AuthenticationProperties { IsPersistent = true };
 
-                authenticationManager.SignIn(authProperties, id);
-                if (Url.IsLocalUrl(returnUrl))
-                {
-                    Redirect(returnUrl);
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Home");
-                }
+            authenticationManager.SignIn(authProperties, id);
+            
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
             }
-
-            return View();
+            
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpPost]
         public ActionResult Logout()
         {
-            var authenticationManager = this.Request.GetOwinContext().Authentication;
+            var authenticationManager = Request.GetOwinContext().Authentication;
             authenticationManager.SignOut();
             return Redirect("/");
         }
